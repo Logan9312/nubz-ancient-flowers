@@ -1,0 +1,8 @@
+{
+    "values": [
+        "#nubz_ancient_flowers:is_cold_biomes",
+        "#nubz_ancient_flowers:is_dry_biomes",
+        "#minecraft:is_nether",
+        "#minecraft:is_end"
+    ]
+}

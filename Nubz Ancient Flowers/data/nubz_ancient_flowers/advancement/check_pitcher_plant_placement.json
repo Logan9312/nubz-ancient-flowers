@@ -1,0 +1,22 @@
+{
+    "criteria": {
+        "place_torchflower": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "location_check",
+                        "predicate": {
+                            "block": {
+                                "blocks": "#nubz_ancient_flowers:pitcher_plants"
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "nubz_ancient_flowers:raycast/start_flower_ray"
+    }
+}

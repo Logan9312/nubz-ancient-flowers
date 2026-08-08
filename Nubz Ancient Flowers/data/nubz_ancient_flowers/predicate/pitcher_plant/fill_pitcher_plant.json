@@ -1,0 +1,34 @@
+{
+  "condition": "minecraft:all_of",
+  "terms": [
+    {
+      "condition": "minecraft:random_chance",
+      "chance": 0.0003125
+    },
+    {
+      "condition": "minecraft:weather_check",
+      "raining": true
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "minecraft:location": {
+          "can_see_sky": true
+        }
+      }
+    },
+    {
+      "condition": "minecraft:inverted",
+      "term": {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "minecraft:location": {
+            "biomes": "#nubz_ancient_flowers:without_rain"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "criteria": {
+    "potted_torchflower": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": "minecraft:potted_torchflower"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "nubz_ancient_flowers:raycast/start_flower_ray"
+  }
+}
