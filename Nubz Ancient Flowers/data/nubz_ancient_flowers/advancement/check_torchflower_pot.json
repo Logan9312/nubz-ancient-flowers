@@ -3,16 +3,19 @@
     "potted_torchflower": {
       "trigger": "minecraft:item_used_on_block",
       "conditions": {
-        "location": [
-          {
-            "condition": "minecraft:location_check",
-            "predicate": {
-              "block": {
-                "blocks": "minecraft:potted_torchflower"
-              }
+        "location": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "predicate": {
+                "block": {
+                  "blocks": "minecraft:potted_torchflower"
+                }
+              },
+              "type": "minecraft:location_check"
             }
-          }
-        ]
+          ]
+        }
       }
     }
   },

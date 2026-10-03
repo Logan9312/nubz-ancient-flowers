@@ -3,16 +3,19 @@
         "place_torchflower": {
             "trigger": "minecraft:placed_block",
             "conditions": {
-                "location": [
-                    {
-                        "condition": "location_check",
-                        "predicate": {
-                            "block": {
-                                "blocks": "#nubz_ancient_flowers:torchflowers"
-                            }
+                "location": {
+                    "type": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "predicate": {
+                                "block": {
+                                    "blocks": "#nubz_ancient_flowers:torchflowers"
+                                }
+                            },
+                            "type": "location_check"
                         }
-                    }
-                ]
+                    ]
+                }
             }
         }
     },

@@ -1,5 +1,4 @@
 {
-  "condition": "minecraft:entity_properties",
   "entity": "this",
   "predicate": {
     "minecraft:location": {
@@ -7,5 +6,6 @@
         "light": 4
       }
     }
-  }
+  },
+  "type": "minecraft:entity_properties"
 }

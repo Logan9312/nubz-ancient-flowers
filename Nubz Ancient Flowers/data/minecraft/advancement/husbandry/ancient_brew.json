@@ -5,16 +5,20 @@
             "trigger": "minecraft:player_interacted_with_entity",
             "conditions": {
                 "entity": {
-                "minecraft:entity_tags": {
-                    "any_of": [
-                    "PitcherPlantFiller"
-                    ]
-                },
-                "minecraft:location": {
-                    "block": {
-                    "blocks": "#nubz_ancient_flowers:pitcher_grant_poison"
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "minecraft:entity_tags": {
+                            "any_of": [
+                                "PitcherPlantFiller"
+                            ]
+                        },
+                        "minecraft:location": {
+                            "block": {
+                                "blocks": "#nubz_ancient_flowers:pitcher_grant_poison"
+                            }
+                        }
                     }
-                }
                 }
             }
         }
